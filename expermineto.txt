@@ -1,0 +1,209 @@
+Iniciando GateWay.
+
+ 
+16/12/15 11:41:29 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a200405243d9fffe00c1100123000001303031334132303034303532343035442f303030312f31353a31323a31363a30333a31313a34313a32392f312f8b
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:42:29 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqM\xfcN\xff\xd8P\x00\xbeVqN\x10N\x00\x1fP\x01\x17VqN$N\x00\x1cP\x01$', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001012d2f012d2fee
+[{'hora': 1450266108, 'id': 'PTR_VENTAN', 'valor': '\xff\xd8'}, {'hora': 1450266108, 'id': 'HMW88-hum', 'valor': '\x00\xbe'}, {'hora': 1450266128, 'id': 'PTR_VENTAN', 'valor': '\x00\x1f'}, {'hora': 1450266128, 'id': 'HMW88-hum', 'valor': '\x01\x17'}, {'hora': 1450266148, 'id': 'PTR_VENTAN', 'valor': '\x00\x1c'}, {'hora': 1450266148, 'id': 'HMW88-hum', 'valor': '\x01$'}]
+ 
+16/12/15 11:42:49 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34323a34392f312f15
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:42:59 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34323a35392f312f14
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:09 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34333a30392f312f18
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:13 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@\\R\xfe', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a200405c52fefffe00c1100123000001303031334132303034303532343035442f303030332f31353a31323a31363a30333a31313a34333a31332f312f50
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:19 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqN8N\x00&P\x01IVqNBN\x005P\x016VqNVN\x00\x1bP\x014', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x02', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001022d2f012d2fed
+[{'hora': 1450266168, 'id': 'PTR_VENTAN', 'valor': '\x00&'}, {'hora': 1450266168, 'id': 'HMW88-hum', 'valor': '\x01I'}, {'hora': 1450266178, 'id': 'PTR_VENTAN', 'valor': '\x005'}, {'hora': 1450266178, 'id': 'HMW88-hum', 'valor': '\x016'}, {'hora': 1450266198, 'id': 'PTR_VENTAN', 'valor': '\x00\x1b'}, {'hora': 1450266198, 'id': 'HMW88-hum', 'valor': '\x014'}]
+ 
+16/12/15 11:43:19 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34333a31392f312f17
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:23 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@\\R\xfe', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a200405c52fefffe00c1100123000001303031334132303034303532343035442f303030332f31353a31323a31363a30333a31313a34333a32332f312f4f
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:29 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34333a32392f312f16
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:33 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@\\R\xfe', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a200405c52fefffe00c1100123000001303031334132303034303532343035442f303030332f31353a31323a31363a30333a31313a34333a33332f312f4e
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:39 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34333a33392f312f15
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:43:49 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34333a34392f312f14
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:09 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqNjN\x001P\x00\xfaVqNtN\x00?P\x00\xe3VqN\x88N\x00!P\x01F', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x03', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001032d2f012d2fec
+[{'hora': 1450266218, 'id': 'PTR_VENTAN', 'valor': '\x001'}, {'hora': 1450266218, 'id': 'HMW88-hum', 'valor': '\x00\xfa'}, {'hora': 1450266228, 'id': 'PTR_VENTAN', 'valor': '\x00?'}, {'hora': 1450266228, 'id': 'HMW88-hum', 'valor': '\x00\xe3'}, {'hora': 1450266248, 'id': 'PTR_VENTAN', 'valor': '\x00!'}, {'hora': 1450266248, 'id': 'HMW88-hum', 'valor': '\x01F'}]
+ 
+16/12/15 11:44:11 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34343a31312f312f1e
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:21 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34343a32312f312f1d
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:31 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34343a33312f312f1c
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:41 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34343a34312f312f1b
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:51 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34343a35312f312f1a
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:44:59 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqN\x9cN\x001P\x00\xfcVqN\xa6N\x00BP\x00\xe6VqN\xbaN\x00\x1cP\x010', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x04', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001042d2f012d2feb
+[{'hora': 1450266268, 'id': 'PTR_VENTAN', 'valor': '\x001'}, {'hora': 1450266268, 'id': 'HMW88-hum', 'valor': '\x00\xfc'}, {'hora': 1450266278, 'id': 'PTR_VENTAN', 'valor': '\x00B'}, {'hora': 1450266278, 'id': 'HMW88-hum', 'valor': '\x00\xe6'}, {'hora': 1450266298, 'id': 'PTR_VENTAN', 'valor': '\x00\x1c'}, {'hora': 1450266298, 'id': 'HMW88-hum', 'valor': '\x010'}]
+ 
+16/12/15 11:45:01 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a30312f312f1e
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:11 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a31312f312f1d
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:19 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x03VqN\xceN\x007P\x00\xf6', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x04', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001042d2f012d2feb
+ 
+16/12/15 11:45:21 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a32312f312f1c
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:31 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a33312f312f1b
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:39 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x06VqN\xceN\x007P\x00\xf6VqN\xe2N\x00EP\x01\t', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x04', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001042d2f012d2feb
+ 
+16/12/15 11:45:41 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a34312f312f1a
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:51 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34353a35312f312f19
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:45:59 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqN\xceN\x007P\x00\xf6VqN\xe2N\x00EP\x01\tVqN\xf6N\x001P\x00\xfa', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x05', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001052d2f012d2fea
+[{'hora': 1450266318, 'id': 'PTR_VENTAN', 'valor': '\x007'}, {'hora': 1450266318, 'id': 'HMW88-hum', 'valor': '\x00\xf6'}, {'hora': 1450266338, 'id': 'PTR_VENTAN', 'valor': '\x00E'}, {'hora': 1450266338, 'id': 'HMW88-hum', 'valor': '\x01\t'}, {'hora': 1450266358, 'id': 'PTR_VENTAN', 'valor': '\x001'}, {'hora': 1450266358, 'id': 'HMW88-hum', 'valor': '\x00\xfa'}]
+ 
+16/12/15 11:46:01 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34363a30332f312f1b
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:46:19 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x03VqO\nN\x00&P\x01H', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x05', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001052d2f012d2fea
+ 
+16/12/15 11:46:29 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34363a32392f312f7d33
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:46:39 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\x02K\x01NK\x02P', 'options': '\xc2', 'frame_id': '\x00', 'frag_num': '\x01', 'source_id': '\x00\x00', 'application_id': ' ', 'source_addr': '\x13\xa2\x00@R@N', 'id': 'rx'}
+frame(base._write): 
+7e00411000007d33a2004052404efffe00c1100123000001303031334132303034303532343035442f303030322f31353a31323a31363a30333a31313a34363a34302f312f1a
+[{'gpio': '\x01', 'sensor': 'PTR_VENTAN', 'id': 'SENSOR_INFO'}, {'gpio': '\x02', 'sensor': 'HMW88-hum', 'id': 'SENSOR_INFO'}]
+ 
+16/12/15 11:46:59 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': '\tVqO\nN\x00&P\x01HVqO\x1eN\x00DP\x01\x00VqO2N\x00\x1cP\x01!', 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x06', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001062d2f012d2fe9
+[{'hora': 1450266378, 'id': 'PTR_VENTAN', 'valor': '\x00&'}, {'hora': 1450266378, 'id': 'HMW88-hum', 'valor': '\x01H'}, {'hora': 1450266398, 'id': 'PTR_VENTAN', 'valor': '\x00D'}, {'hora': 1450266398, 'id': 'HMW88-hum', 'valor': '\x01\x00'}, {'hora': 1450266418, 'id': 'PTR_VENTAN', 'valor': '\x00\x1c'}, {'hora': 1450266418, 'id': 'HMW88-hum', 'valor': '\x01!'}]
+ 
+16/12/15 11:47:49 -> 
+{'delimitor': '#', 'reserved': '\xff\xfe', 'source_type': '\x00', 'data': "\tVqOFN\x00+P\x01FVqOPN\x00@P\x01'VqOdN\x00DP\x01\x15", 'options': '\xc1', 'frame_id': '\x00', 'frag_num': '\x07', 'source_id': '\x00\x01', 'application_id': '0', 'source_addr': '\x13\xa2\x00@RC\xd9', 'id': 'rx'}
+frame(base._write): 
+7e001a1000007d33a200405243d9fffe00c1010123000001072d2f012d2fe8
+[{'hora': 1450266438, 'id': 'PTR_VENTAN', 'valor': '\x00+'}, {'hora': 1450266438, 'id': 'HMW88-hum', 'valor': '\x01F'}, {'hora': 1450266448, 'id': 'PTR_VENTAN', 'valor': '\x00@'}, {'hora': 1450266448, 'id': 'HMW88-hum', 'valor': "\x01'"}, {'hora': 1450266468, 'id': 'PTR_VENTAN', 'valor': '\x00D'}, {'hora': 1450266468, 'id': 'HMW88-hum', 'valor': '\x01\x15'}]

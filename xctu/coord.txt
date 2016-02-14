@@ -1,0 +1,11 @@
+baudrate 38400
+serial /dev/ttyUSB1
++++
+ATAP 2
+ATCE 0
+ATID 1324
+ATCH 0D
+ATPL 4
+ATWR
+ATFR
+exit

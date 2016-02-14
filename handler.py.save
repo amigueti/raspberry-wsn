@@ -1,0 +1,71 @@
+from sensores import Sensores
+from sender import Sender
+import datetime
+import MySQLdb
+
+
+class Handler:
+	def __init__(self):
+		self.sensores = Sensores()
+		self.sender = Sender()
+
+	def manejar_20(self, datos):
+		numero_sensores = 0
+		pointer = 0
+		numero_sensores = int(datos['data'][pointer].encode('hex'))
+		pointer += 1
+		(pointer, sensores_valores) = self.sensores.descomponer(datos['data'], pointer)
+		self.sender.send_10()
+		# almacenar waspmote en base de datos
+		print sensores_valores
+
+
+	def manejar_30(self, datos):
+		numero_sensores = 0
+                pointer = 0
+		lista_medidas = {}
+                numero_sensores = int(datos['data'][pointer].encode('hex'))
+                pointer += 1
+		j = 0
+		while (j < 3):
+			hora = datos['data'][pointer:pointer+4]
+			pointer +=4
+			# habria que definir una constante para especificar como extraemos la hora
+#			hora = datetime.datetime.fromtimestamp(int(hora.encode('hex'), 16)).strftime('%Y-%m-%d %H:%M:%S')
+			hora = int(hora.encode('hex'), 16)
+			i = 0
+			lista_sensores = []
+			while (i < (numero_sensores/3)-1):
+				(pointer, sensores_valores) = self.sensores.descomponer(datos['data'], pointer)
+				lista_sensores.append(sensores_valores)
+				i += 1
+			j += 1
+			lista_medidas.update({hora:lista_sensores})
+
+		db = MySQLdb.connect("localhost","root","urjc","gateway" )
+		cursor = db.cursor()
+
+		for hora, val in lista_medidas.iteritems():
+			for medida in val:
+				print 'mota: ' + str(int(datos['source_id'].encode('hex'), 16))
+				print 'sensor: ' + str(medida['id'])
+				print 'valor: ' + str(int(medida['valor'].encode('hex'), 16))
+				print 'hora: ' + datetime.datetime.fromtimestamp(hora).strftime('%Y-%m-%d %H:%M:%S')
+
+				cursor.execute("""INSERT INTO medidas (mota, sensor, valor) VALUES (%s)""", 
+						(int(datos['source_id'].encode('hex'), 16))
+#						medida['id'],
+#						int(medida['valor'].encode('hex'), 16),)
+#						datetime.datetime.fromtimestamp(hora).strftime('%Y-%m-%d %H:%M:%S'),)
+					   )
+
+
+	def comprobar(self, datos):
+		if datos['application_id'] == '\x10':
+                	print '10'
+	        elif datos['application_id'] == '\x20':
+        	        self.manejar_20(datos)
+	        elif datos['application_id'] == '\x30':
+			self.manejar_30(datos)
+	        else:
+        	        print 'mensaje no reconocido'
