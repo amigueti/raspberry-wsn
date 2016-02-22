@@ -15,6 +15,8 @@ import struct
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(14, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
 
 Config = ConfigParser.ConfigParser()
 Config.read('conf.ini')
@@ -37,7 +39,37 @@ class Mota:
 		self.num_sensores = 0
 		self.num_seq = 1
 		self.contador = 0
+		self.contador_interrupciones = 0
 		self.mensaje = ''
+		self.mensaje_interrupcion = ''
+
+
+	def interrupcion_hall(self, channel):
+		print "se ha disparado el gpio: " + str(channel)
+		dt = datetime.datetime.now()
+                hora = time.mktime(dt.timetuple())
+                epoch = struct.pack(">i", hora)
+
+		#comprobamos el estado del sensor
+		medida = GPIO.input(channel)
+		#obtenemos el id del del sensor
+		if channel == 14:
+			print "El estado del sensor es: " + str(medida)
+			sensor = "HALL"
+			gpio = 3
+		elif channel == 2:
+			sensor = 'sensor'+str(2)
+			gpio = 2
+		elif channel == 3:
+			sensor = 'sensor'+str(3)
+			gpio = 3
+		#creamos la estructura: id_sensor + gpio_sensor + hora + estado
+		cadena = sensores.get_sensor_key(sensor) + struct.pack(">h", gpio)[1] + epoch + struct.pack(">h", int(medida))[1]
+		self.contador_interrupciones +=1
+		self.mensaje_interrupcion += cadena
+		print "cadena interrupciones: "
+		print self.mensaje_interrupcion
+		print self.mensaje_interrupcion.encode("HEX")
 
 
 	def xbee_awake(self, channel):
@@ -53,9 +85,15 @@ class Mota:
 			self.num_sensores = 0
 			self.mensaje = ''
 			self.num_seq += 1
-			if self.num_seq == 255:
+			print "seq: " + str(self.num_seq)
+			if self.num_seq == 256:
 				self.num_seq = 1
-			
+
+		if self.contador_interrupciones >= 2:
+			mensaje = struct.pack(">h", self.contador_interrupciones)[1] + self.mensaje_interrupcion
+			sender.send_40(mensaje)
+			self.contador_interrupciones = 0
+			self.mensaje_interrupcion = ''
 
 
 	def conectar_red(self):
@@ -128,10 +166,11 @@ print "Iniciando Mota"
 mota = Mota()
 
 try:
-	GPIO.wait_for_edge(17, GPIO.RISING)
-	mota.conectar_red()
+#	GPIO.wait_for_edge(17, GPIO.RISING)
+#	mota.conectar_red()
 	GPIO.add_event_detect(17, GPIO.RISING, callback=mota.xbee_awake)
-#	xbee_awake('a')
+	GPIO.add_event_detect(14, GPIO.BOTH, callback=mota.interrupcion_hall, bouncetime=300)
+
 	while True:
 		time.sleep(0.1)
 except KeyboardInterrupt:

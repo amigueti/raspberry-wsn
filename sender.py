@@ -58,11 +58,9 @@ class Sender:
 		ser.close()
 
 		
-	def send_40(self):
+	def send_40(self, mensaje):
 		xbee, ser = self.iniciar()
                 date = datetime.datetime.now()
                 date = date.strftime('%y:%m:%d:0%w:%H:%M:%S')
-#		xbee.send('tx', dest_addr='\x00\x00\x00\x00\x00\x00\xFF\xFF', data=mensaje)
-#		xbee.send('tx', dest_addr='\x00\x13\xA2\x00\x40\x52\x42\x59', data=mensaje)
-		xbee.send('tx', dest_addr='\x00\x13\xA2\x00\x40\x52\x42\x59', data=mensaje)
+		xbee.send('tx', dest_addr='\x00\x13\xA2\x00\x40\x52\x40\x5D', app_id = '\x40', data=mensaje)
 		ser.close()
